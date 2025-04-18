@@ -1,22 +1,23 @@
 {
   "name": "supergulp",
-  "version": "1.0.0",
-  "description": "Learn Gulp by building an awesome development enviroment",
-  "main": "index.js",
+  "packageManager": "yarn@4.9.1",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp dev",
+    "build": "gulp build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SZlim/supergulp.git"
+  "devDependencies": {
+    "del": "^8.0.0",
+    "gulp": "^5.0.0",
+    "gulp-cli": "^3.0.0",
+    "gulp-pug": "^5.0.0"
   },
-  "keywords": [
-    "gulp"
-  ],
-  "author": "seoungjin lim (jiin972@gmail.com)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/SZlim/supergulp/issues"
-  },
-  "homepage": "https://github.com/SZlim/supergulp#readme"
+  "dependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/register": "^7.25.9",
+    "gulp-image": "^6.3.1",
+    "gulp-sass": "^6.0.1",
+    "gulp-webserver": "^0.9.1",
+    "sass": "^1.86.3"
+  }
 }
