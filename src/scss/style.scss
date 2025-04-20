@@ -1,6 +1,6 @@
-@import "_reset";
-@import "variable";
+@use "_reset";
+@use "_variable";
 
 body {
-  background-color: $red;
+  background-color: variable.$red;
 }
