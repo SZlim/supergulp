@@ -2,10 +2,8 @@ import gulp, { dest } from "gulp";
 import gpug from "gulp-pug";
 import { deleteAsync } from "del";
 import ws from "gulp-webserver";
-import src from "gulp-webserver";
 import image from "gulp-image";
 import dartSass from "sass";
-import gulpsass from "gulp-sass";
 import gulpSass from "gulp-sass";
 
 const sass = gulpSass(dartSass);
@@ -56,6 +54,6 @@ const prepare = gulp.series([clean, img]);
 
 const assets = gulp.series([pug, styles]);
 
-const postDev = gulp.parallel([webserver, watch]);
+const live = gulp.parallel([webserver, watch]);
 
-export const dev = gulp.series([prepare, assets, postDev]);
+export const dev = gulp.series([prepare, assets, live]);
