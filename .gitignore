@@ -13,3 +13,5 @@ node_modules
 .gitattributes
 .yarnrc.yml
 .yarn.lock
+.editorconfig
+.babelrc
