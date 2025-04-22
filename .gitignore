@@ -7,11 +7,10 @@
 # next.js build output
 .next
 build/
-.vscode/
+.vscode
 node_modules
 .yarn/
 .gitattributes
 .yarnrc.yml
-.yarn.lock
 .editorconfig
 .babelrc
